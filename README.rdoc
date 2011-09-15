@@ -67,6 +67,7 @@ and in the model class add this code
 
   class User < ActiveRecord::Basse
     apply_simple_captcha
+    attr_accessible :captcha,:captcha_key
   end
 
 ====FormBuilder helper
