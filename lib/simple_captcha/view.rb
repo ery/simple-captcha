@@ -105,8 +105,6 @@ module SimpleCaptcha #:nodoc
     end
       
     def simple_captcha_key(key_name = nil)
-      p key_name
-      p session[:id]
       if key_name.nil?
         session[:captcha] ||= SimpleCaptcha::Utils.generate_key(session[:id].to_s, 'captcha')
       else
