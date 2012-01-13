@@ -57,7 +57,7 @@ module SimpleCaptcha #:nodoc
     
     def show_image_src(options={})
       key = simple_captcha_key(options[:object])
-      "/simple_captcha/#{key}?time=#{Time.now.to_i}"
+      %Q(simple_captcha/#{key}?time=#{Time.now.to_i}).html_safe
     end
 
     private
