@@ -37,9 +37,9 @@ module SimpleCaptcha #:nodoc
           DISTORTIONS[rand(DISTORTIONS.length)] :
           DISTORTIONS.include?(key) ? key : 'low'
         case key.to_s
-          when 'low' then return [0 + rand(2), 80 + rand(20)]
-          when 'medium' then return [2 + rand(2), 50 + rand(20)]
-          when 'high' then return [4 + rand(2), 30 + rand(20)]
+        when 'low' then return [0 + rand(2), 80 + rand(20)]
+        when 'medium' then return [2 + rand(2), 50 + rand(20)]
+        when 'high' then return [4 + rand(2), 30 + rand(20)]
         end
       end
     end
@@ -56,27 +56,27 @@ module SimpleCaptcha #:nodoc
 
     private
 
-      def generate_simple_captcha_image(simple_captcha_key) #:nodoc
-        amplitude, frequency = ImageHelpers.distortion(SimpleCaptcha.distortion)
-        text = Utils::simple_captcha_value(simple_captcha_key)
+    def generate_simple_captcha_image(simple_captcha_key) #:nodoc
+      amplitude, frequency = ImageHelpers.distortion(SimpleCaptcha.distortion)
+      text = Utils::simple_captcha_value(simple_captcha_key)
 
-        params = ImageHelpers.image_params(SimpleCaptcha.image_style).dup
-        params << "-size #{SimpleCaptcha.image_size}"
-        params << "-wave #{amplitude}x#{frequency}"
-        params << "-gravity 'Center'"
-        params << "-pointsize 22"
-        params << "-implode 0.2"
+      params = ImageHelpers.image_params(SimpleCaptcha.image_style).dup
+      params << "-size #{SimpleCaptcha.image_size}"
+      params << "-wave #{amplitude}x#{frequency}"
+      params << "-gravity 'Center'"
+      params << "-pointsize 22"
+      params << "-implode 0.2"
 
-        dst = RUBY_VERSION < '1.9' ? Tempfile.new('simple_captcha.jpg') : Tempfile.new(['simple_captcha', '.jpg'])
-        dst.binmode
+      dst = RUBY_VERSION < '1.9' ? Tempfile.new('simple_captcha.png') : Tempfile.new(['simple_captcha', '.png'])
+      dst.binmode
 
-        params << "label:#{text} '#{File.expand_path(dst.path)}'"
+      params << "label:#{text} '#{File.expand_path(dst.path)}'"
 
-        SimpleCaptcha::Utils::run("convert", params.join(' '))
+      SimpleCaptcha::Utils::run("convert", params.join(' '))
 
-        dst.close
+      dst.close
 
-        File.expand_path(dst.path)
-      end
+      File.expand_path(dst.path)
+    end
   end
 end

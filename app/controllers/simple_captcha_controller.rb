@@ -8,7 +8,7 @@ class SimpleCaptchaController < ActionController::Metal
     unless params[:id].blank?
       send_file(
         generate_simple_captcha_image(params[:id]),
-        :type => 'image/jpeg',
+        :type => 'image/png',
         :disposition => 'inline',
         :filename => 'simple_captcha.png')
     else
