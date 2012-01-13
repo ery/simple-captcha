@@ -10,7 +10,7 @@ class SimpleCaptchaController < ActionController::Metal
         generate_simple_captcha_image(params[:id]),
         :type => 'image/jpeg',
         :disposition => 'inline',
-        :filename => "simple_captcha.jpg")
+        :filename => 'simple_captcha.png')
     else
       self.response_body = [404, {"Content-Type" => "text/html"}, ["Not Found"]]
     end
