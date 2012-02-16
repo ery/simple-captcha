@@ -2,6 +2,8 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 
+require File.expand_path("../lib/simple_captcha/version", __FILE__)
+
 desc 'Default: run unit tests.'
 task :default => :test
 
@@ -35,5 +37,5 @@ task :release => :build do
   puts "Pushing to Github..."
   system "git push --tags"
   puts "Pushing to rubygems.org..."
-  system "gem push hanzi_to_pinyin-#{SimpleCaptcha::VERSION}.gem"
+  system "gem push wxianfeng_simple_captcha-#{SimpleCaptcha::VERSION}.gem"
 end
