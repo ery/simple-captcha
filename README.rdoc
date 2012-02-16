@@ -175,6 +175,8 @@ You can change the CSS of the SimpleCaptcha DOM elements as per your need in thi
 
   <%= show_simple_captcha(:label => "human authentication") %>
 
+  <%= image_tag show_image_src %>
+
   <%= image_tag show_image_src(:object=>"signup") %>
 
 ====Model Based Example
