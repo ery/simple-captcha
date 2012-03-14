@@ -1,7 +1,8 @@
 # encoding:utf-8
-class SimpleCaptchaController < ActionController::Metal
-  include ActionController::Streaming if Rails.version.to_f < 3.1
-  include ActionController::DataStreaming if Rails.version.to_f >= 3.1
+# class SimpleCaptchaController < ActionController::Metal 
+class SimpleCaptchaController < ActionController::Base
+  # include ActionController::Streaming if Rails.version.to_f < 3.1
+  # include ActionController::DataStreaming if Rails.version.to_f >= 3.1
   include SimpleCaptcha::ImageHelpers
 
   # GET /simple_captcha
