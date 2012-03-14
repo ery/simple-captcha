@@ -1,19 +1,6 @@
 =SimpleCaptcha
 
-SimpleCaptcha is the simplest and a robust captcha plugin. Its implementation requires
-adding up a single line in views and in controllers/models.
-SimpleCaptcha is available to be used with Rails 3 or above and also it provides the
-backward compatibility with previous versions of Rails.
-
-==Features
-
-* Zero FileSystem usage(secret code moved to db-store and image storage removed).
-* Provides various image styles.
-* Provides three level of complexity of images.
-* Works absolutely fine in distributed environment(session and db based implementation works fine in distributed environment).
-* Implementation is as easy as just writing a single line in your view. "<%= show_simple_captcha %>" within the 'form' tags.
-* Flexible DOM and CSS handling(There is a separate view partial for rednering SimpleCaptcha DOM elements).
-* Automated removal of 1 hour old unmatched simple_captcha data.
+SimpleCaptcha for Rails 3
 
 ==Requirements
 
@@ -24,7 +11,11 @@ backward compatibility with previous versions of Rails.
 
 ==Installation
 
-  gem 'simple_captcha', :git => 'git://github.com/wxianfeng/simple-captcha.git'
+  rails < 3.1
+  gem 'wxianfeng_simple_captcha', '0.1.0' , require: 'simple_captcha'
+  
+  rails >= 3.1
+  gem 'wxianfeng_simple_captcha' , '0.2.0' , require: 'simple_captcha'
 
 ==Setup
 
@@ -209,15 +200,3 @@ You can change the CSS of the SimpleCaptcha DOM elements as per your need in thi
 ==Who's who?
 
 Enjoy the simplest captcha implementation.
-
-Author: Sur
-
-Blog: http://expressica.com
-
-Contact: sur.max@gmail.com
-
-Plugin Homepage: http://expressica.com/simple_captcha
-
-Plugin update for rails 3: http://github.com/galetahub
-
-Any feedback/comment/issue/donation is welcome!

@@ -18,6 +18,8 @@ module SimpleCaptcha #:nodoc
       
       if params[:captcha]
         data = SimpleCaptcha::Utils::simple_captcha_value(session[:captcha])
+        Rails.logger.info "info session #{session[:captcha]}"
+        Rails.logger.info "info data #{data}"
         result = data == params[:captcha].delete(" ").upcase
         SimpleCaptcha::Utils::simple_captcha_passed!(session[:captcha]) if result
         return result
