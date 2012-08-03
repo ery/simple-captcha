@@ -16,6 +16,7 @@ captcha for Rails3
   gem 'wxianfeng_simple_captcha', '0.2.0', require: 'simple_captcha' 
 
 ## Setup
+
   rails generate simple_captcha 
   rake db:migrate 
 
