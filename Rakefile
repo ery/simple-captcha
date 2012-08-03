@@ -1,6 +1,6 @@
 require 'rake'
 require 'rake/testtask'
-require 'rake/rdoctask'
+require 'rdoc/task'
 
 require File.expand_path("../lib/simple_captcha/version", __FILE__)
 
