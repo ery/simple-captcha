@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
-    "README.rdoc",
+    "README.md",
      "Rakefile",
      "app/controllers/simple_captcha_controller.rb",
      "config/routes.rb",
