@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{wxianfeng_simple_captcha}
-  s.version = "0.2.0"
+  s.version = "0.3.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Pavlo Galeta", "Igor Galeta"]
-  s.date = %q{2010-10-26}
-  s.description = %q{SimpleCaptcha is available to be used with Rails 3 or above and also it provides the backward compatibility with previous versions of Rails.}
+  s.authors = ["wxianfeng"]
+  # s.date = %q{2010-10-26}
+  s.description = %q{ wxianfeng_simple_captcha is captcha for rails,modified from simple_captcha .}
   s.email = %q{wang.fl1429@gmail.com}
   s.extra_rdoc_files = [
     "README.rdoc"
@@ -36,12 +36,12 @@ Gem::Specification.new do |s|
      "lib/simple_captcha/view.rb",
      "test/simple_captcha_test.rb"
   ]
-  s.homepage = %q{http://github.com/galetahub/simple-captcha}
+  s.homepage = %q{http://github.com/wxianfeng/simple-captcha}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{simple_captcha}
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{SimpleCaptcha is the simplest and a robust captcha plugin.}
+  s.summary = %q{wxianfeng_simple_captcha is captcha for rails,modified from simple_captcha.}
   s.test_files = [
     "test/simple_captcha_test.rb"
   ]
