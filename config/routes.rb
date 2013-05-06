@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  match '/simple_captcha/:id', :to => 'simple_captcha#show', :as => :simple_captcha
+  match '/simple_captcha/:id', :to => 'simple_captcha#show', :as => :simple_captcha, :via => :get
 end
