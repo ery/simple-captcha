@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.description = %q{ wxianfeng_simple_captcha is captcha for rails,modified from simple_captcha .}
   s.email = %q{wang.fl1429@gmail.com}
   s.extra_rdoc_files = [
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     "README.rdoc",
