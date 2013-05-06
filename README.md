@@ -19,6 +19,10 @@ captcha for Rails
   Rails >=3.1 
 
     gem 'wxianfeng_simple_captcha', '0.2.0', require: 'simple_captcha' 
+  
+  Rails >=4.0
+  
+    gem 'wxianfeng_simple_captcha', '0.3.0', require: 'simple_captcha' 
 
 ## Setup
 
