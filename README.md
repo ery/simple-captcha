@@ -22,7 +22,7 @@ captcha for Rails
   
   Rails >=4.0
   
-    gem 'wxianfeng_simple_captcha', '0.3.0', require: 'simple_captcha' 
+    gem 'wxianfeng_simple_captcha', '0.4.0', require: 'simple_captcha'
 
 ## Setup
 

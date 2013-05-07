@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{wxianfeng_simple_captcha}
-  s.version = "0.3.0"
+  s.version = "0.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["wxianfeng"]
@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
-    "README.md",
+     "README.md",
      "Rakefile",
      "app/controllers/simple_captcha_controller.rb",
      "config/routes.rb",
