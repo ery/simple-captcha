@@ -3,7 +3,7 @@ module SimpleCaptcha
     # set_table_name "simple_captcha_data"
     self.table_name = "simple_captcha_data"
     
-    attr_accessible :key, :value
+    # attr_accessible :key, :value
     
     class << self
       def get_data(key)
