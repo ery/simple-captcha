@@ -4,14 +4,13 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{wxianfeng_simple_captcha}
+  s.name = %q{simple_captcha}
   s.version = "0.5.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["wxianfeng"]
-  # s.date = %q{2010-10-26}
-  s.description = %q{ wxianfeng_simple_captcha is captcha for rails,modified from simple_captcha .}
-  s.email = %q{wang.fl1429@gmail.com}
+  s.authors = ["erylei"]
+  s.description = %q{ simple_captcha is captcha for rails,modified from simple_captcha .}
+  s.email = %q{erylei@gmail.com}
   s.extra_rdoc_files = [
     "README.md"
   ]
@@ -36,12 +35,12 @@ Gem::Specification.new do |s|
      "lib/simple_captcha/view.rb",
      "test/simple_captcha_test.rb"
   ]
-  s.homepage = %q{http://github.com/wxianfeng/simple-captcha}
+  s.homepage = %q{http://github.com/ery/simple-captcha}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{simple_captcha}
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{wxianfeng_simple_captcha is captcha for rails,modified from simple_captcha.}
+  s.summary = %q{simple_captcha is captcha for rails,modified from simple_captcha.}
   s.test_files = [
     "test/simple_captcha_test.rb"
   ]

@@ -24,11 +24,11 @@ Rake::RDocTask.new(:rdoc) do |rdoc|
 end
 
 task :build do
-  system "gem build wxianfeng_simple_captcha.gemspec"
+  system "gem build simple_captcha.gemspec"
 end
 
 task :install => :build do
-  system "sudo gem install wxianfeng_simple_captcha-#{SimpleCaptcha::VERSION}.gem"
+  system "sudo gem install simple_captcha-#{SimpleCaptcha::VERSION}.gem"
 end
 
 task :release => :build do
@@ -37,5 +37,5 @@ task :release => :build do
   puts "Pushing to Github..."
   system "git push --tags"
   puts "Pushing to rubygems.org..."
-  system "gem push wxianfeng_simple_captcha-#{SimpleCaptcha::VERSION}.gem"
+  system "gem push simple_captcha-#{SimpleCaptcha::VERSION}.gem"
 end

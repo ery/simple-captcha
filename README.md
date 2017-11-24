@@ -12,42 +12,38 @@ captcha for Rails
 
 ## Install
 
-  Rails < 3.1 
+  Rails < 3.1
 
-    gem 'wxianfeng_simple_captcha', '0.1.0', require: 'simple_captcha' 
+    gem 'simple_captcha', '0.1.0', require: 'simple_captcha'
 
-  Rails >=3.1 
+  Rails >=3.1
 
-    gem 'wxianfeng_simple_captcha', '0.2.0', require: 'simple_captcha' 
-  
+    gem 'simple_captcha', '0.2.0', require: 'simple_captcha'
+
   Rails >=4.0
-  
-    gem 'wxianfeng_simple_captcha', '0.5.0', require: 'simple_captcha'
+
+    gem 'simple_captcha', '0.5.0', require: 'simple_captcha'
 
 ## Setup
 
-    rails generate simple_captcha 
-    rake db:migrate 
+    rails generate simple_captcha
+    rake db:migrate
 
 ## Usage
 
-  controller: 
-  
-     include SimpleCaptcha::ControllerHelpers 
+  controller:
 
-  view: 
-  
-     <%= show_simple_captcha %> 
+     include SimpleCaptcha::ControllerHelpers
 
-controller valid: 
+  view:
+
+     <%= show_simple_captcha %>
+
+controller valid:
 ```
-if simple_captcha_valid? 
- "OK!" 
+if simple_captcha_valid?
+ "OK!"
 else
  'Fail!'
 end
 ```
-##DEMO
-
-  http://d.wxianfeng.com/demos/simple_captcha
- 
